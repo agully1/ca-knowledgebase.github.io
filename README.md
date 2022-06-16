@@ -1,4 +1,4 @@
-![logo.png](UKAN+ Computational Acoustics Knowledgebase)
+![UKAN+ Computational Acoustics Knowledgebase](logo.png)
 
 # UKAN+ Computational Acoustics Knowledgebase
 
