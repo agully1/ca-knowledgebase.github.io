@@ -1,23 +1,23 @@
-![UKAN+ Computational Acoustics Knowledgebase](logo.png)
+![UKAN Computational Acoustics Knowledgebase](logo.png)
 
-# UKAN+ Computational Acoustics Knowledgebase
+The UKAN Computational Acoustics Knowledgebase is a website
+It can be viewed online at [knowledgebase.acoustics.ac.uk](https://knowledgebase.acoustics.ac.uk)
 
-    CA Knowledge base branding
-    Table of Contents
-    What is this
-        status
-        link to the actual site
-        who is this for (the repo not the site)
-    how to contact
-    how to contribute
-        how to clone
-        how to install Jupyter
-            do I need to in order to contribute?
-        how to edit .md
-        how to edit .ipynb
-        how to edit .yml
-        flagging an issue
+status: [![publish-book](https://github.com/ca-knowledgebase/ca-knowledgebase.github.io/actions/workflows/publish.yml/badge.svg)](https://github.com/ca-knowledgebase/ca-knowledgebase.github.io/actions/workflows/publish.yml)
 
-Some of these might just link to other files in the repo
+# How to contribute
 
-## Deploying the book locally
+TODO:
+- how to clone
+- how to install Jupyter
+    - do I need to in order to contribute?
+- how to edit .md
+- how to edit .ipynb
+- how to edit .yml
+- flagging an issue
+
+# Deploying the book locally
+```bash
+pip install -r requirements.txt
+jupyter-book build .
+```
