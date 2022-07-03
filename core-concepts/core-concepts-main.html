@@ -123,11 +123,6 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../about/code-of-conduct.html">
-   Code of Conduct
-  </a>
- </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../about/contribution-guide.html">
    Guide for Contributors
@@ -143,24 +138,58 @@ const thebe_selector_output = ".output, .cell_output"
      Making suggestions
     </a>
    </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../about/contribute-contribute.html">
      Contributing material to the site
     </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../about/code-template.html">
-     Tutorial template
-    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../about/contribute-github.html">
+       Getting started with GitHub
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../about/code-template.html">
+       Tutorial template
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../about/contribute-user-code.html">
-     Contribute your own computational acoustics code
+     Add your own computational acoustics code
     </a>
    </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../about/contribute-maintain.html">
-     For maintainers
+     Further information for maintainers
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../about/contribute-building.html">
+       Building this site
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../about/contribute-docker.html">
+       The knowledgebase Docker image
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CODE_OF_CONDUCT.html">
+     Code of Conduct
     </a>
    </li>
   </ul>
@@ -178,24 +207,115 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="problem-types.html">
-   Types of problem
+  <a class="reference internal" href="why-use-ca.html">
+   Why use Computational Acoustics?
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="element-types.html">
-   Types of element
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="how-define-problem.html">
+   How to define the problem to be solved?
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="how-define-problem-what-is-a-pde.html">
+     What is a PDE?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="how-define-problem-acoustics-pdes.html">
+     Acoustics PDEs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="how-define-problem-other-pdes.html">
+     Other PDEs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="how-define-problem-problem-classes.html">
+     Classes of problem
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="meshes.html">
-   Meshes
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="how-to-solve.html">
+   How does the algorithm solve the problem?
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="how-to-solve-weak-form.html">
+     Weak Forms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="how-to-solve-finite-difference.html">
+     Finite Difference
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="how-to-solve-sums-of-solutions.html">
+     Sums of Analytical Solutions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="how-to-solve-greens-functions.html">
+     Monopoles and free space Green’s Functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="how-to-solve-eikonal.html">
+     Eikonal Approximation and Raytracing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="how-to-solve-magic-of-matrices.html">
+     Sums of Analytical Solutions
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="GreensFunctions.html">
-   Monopoles and free space Green’s Functions
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="geom-and-mesh.html">
+   Geometry and Meshing
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom-and-mesh-dimensionality.html">
+     Dimensionality
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom-and-mesh-mesh-structure.html">
+     Mesh Structure
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom-and-mesh-elements-and-interpolation.html">
+     Elements and Interpolation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom-and-mesh-mesh-refinement.html">
+     Meshes
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -208,14 +328,19 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../tutorials/bem/bem-tutorials-main.html">
    BEM Tutorials
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../tutorials/bem/bem-tutorial-1.html">
+    <a class="reference internal" href="../tutorials/bem/BEM_in_words.html">
+     BEM in words
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorials/bem/quick_BEM3.html">
      The Boundary Element Method (BEM)
     </a>
    </li>
@@ -225,17 +350,12 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../tutorials/fem/fem-tutorials-main.html">
    FEM Tutorials
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../tutorials/fem/fenics-helmholtz-tutorial-1.html">
-     The Helmholtz Equation with FEniCS
-    </a>
-   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../tutorials/fem/fenicsx-helmholtz-tutorial.html">
      The Helmholtz Equation with FEniCSx
@@ -243,10 +363,22 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../tutorials/fdtd/fdtd-tutorials-main.html">
    FDTD Tutorials
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorials/fdtd/fdtd-tutorials-1.html">
+     The 1D Wave
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -292,8 +424,8 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../community/community.html">
-   Community
+  <a class="reference internal" href="../community/bios.html">
+   Author biographies
   </a>
  </li>
 </ul>
@@ -520,16 +652,8 @@ title="Print to PDF"
 <p class="admonition-title">Warning</p>
 <p>This part of the site is currently under development. Its content is incomplete.</p>
 </div>
-<p>This is where you will find information about the core concepts underlying computational acoustics methods, including concepts such as:</p>
-<ul class="simple">
-<li><p>PDEs</p></li>
-<li><p>Types of problem</p></li>
-<li><p>Boundary conditions</p></li>
-<li><p>Discretising a domain</p></li>
-<li><p>Limits on element size</p></li>
-<li><p>…</p></li>
-</ul>
-<p>Content will be added soon. If you can contribute to this part of the site, please do so (following our <a class="reference internal" href="../about/contribute-contribute.html"><span class="doc std std-doc">guide for contributors</span></a>).</p>
+<p>This is where you will find information about the core concepts underlying computational acoustics methods.</p>
+<p>If you can contribute to this part of the site, please do so (following our <a class="reference internal" href="../about/contribute-contribute.html"><span class="doc std std-doc">guide for contributors</span></a>).</p>
 </section>
 
     <script type="text/x-thebe-config">
